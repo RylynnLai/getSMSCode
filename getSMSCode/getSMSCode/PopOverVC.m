@@ -41,6 +41,9 @@
 - (IBAction)refresh:(NSButton *)sender {
     [self segmentAction:self.segmentedController];
 }
+- (IBAction)quitAction:(NSButton *)sender {
+    [[NSApplication sharedApplication] terminate:self];
+}
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context
 {
